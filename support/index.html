@@ -6,7 +6,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support — Meg Software</title>
+  <title>Contact Us — Meg Software</title>
   <meta name="description" content="Get help with mPaceline Pulse and other Meg Software apps.">
   <link rel="icon" type="image/png" href="../images/icon.png">
   <link rel="stylesheet" href="../styles.css">
@@ -15,16 +15,58 @@
   {% include header.html %}
 
   <main class="doc">
-    <h1>Support</h1>
-    <p>Most of your support needs should be solved with the information we have posted on our website — start with the <a href="../help-topics/">Help Topics</a>. If not, please let us know. We take pride in how we support our customers and will do our best to get back to you within a few hours of receiving your email.</p>
-    <div class="summary">
-      <p><strong>Email Us</strong></p>
-      <p class="email"><a href="mailto:support@megsoftware.com">support [at] megsoftware.com</a></p>
+    <h1>Contact Us</h1>
+    <p>Questions, problems or feature ideas? We answer every email, usually within a few hours.</p>
+
+    <div class="contact-card">
+      <h2>Email support</h2>
+      <!-- The address is assembled by the script below so it never appears whole in the page source. -->
+      <p class="email" id="email-text"><noscript>support [at] megsoftware [dot] com</noscript></p>
+      <div class="contact-actions" id="email-actions" hidden>
+        <a class="button" id="email-link" href="#">Email Us</a>
+        <button class="button secondary" id="copy-email" type="button">Copy address</button>
+      </div>
+      <p class="contact-hint">To help us answer quickly, include your device (iPhone or iPad), iOS version, mPaceline Pulse version, and the equipment you use: Peloton Bike, Tread or Row, or the make and model of your own bike, treadmill or rower.</p>
     </div>
-    <p>It helps to include your device model, iOS version, and the version of mPaceline Pulse you’re using.</p>
-    <p>We look forward to helping you.</p>
+
+    <h2>Quick answers</h2>
+    <ul class="help-list">
+      <li><a href="../help-connecting/">Connecting your Bike, Tread or Rower</a></li>
+      <li><a href="../help-peloton/">Connecting your Peloton account</a></li>
+      <li><a href="../help-livetrack/">Live tracking a Peloton class</a></li>
+      <li><a href="../help-topics/">All Help Topics</a></li>
+      <li><a href="https://www.facebook.com/groups/mpaceline" rel="noopener">mPaceline Facebook Community</a></li>
+    </ul>
   </main>
 
   {% include footer.html %}
+
+  <script>
+    (function () {
+      var parts = ["troppus", "moc.erawtfosgem"];
+      var flip = function (s) { return s.split("").reverse().join(""); };
+      var address = flip(parts[0]) + "@" + flip(parts[1]);
+      var body = "\n\n---\nDevice (iPhone/iPad):\niOS version:\nmPaceline Pulse version:\nEquipment:\n";
+
+      document.getElementById("email-text").textContent = address;
+      document.getElementById("email-link").href = "mailto:" + address +
+        "?subject=" + encodeURIComponent("mPaceline Pulse support") +
+        "&body=" + encodeURIComponent(body);
+      document.getElementById("email-actions").hidden = false;
+
+      var copy = document.getElementById("copy-email");
+      copy.addEventListener("click", function () {
+        var done = function () {
+          copy.textContent = "Copied!";
+          setTimeout(function () { copy.textContent = "Copy address"; }, 2000);
+        };
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(address).then(done, function () { window.prompt("Copy this address:", address); });
+        } else {
+          window.prompt("Copy this address:", address);
+        }
+      });
+    })();
+  </script>
 </body>
 </html>

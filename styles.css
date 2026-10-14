@@ -334,6 +334,16 @@ figure.quote figcaption::before { content: "— "; }
 .doc .summary p:last-child { margin: 0; }
 .doc .email { font-size: 22px; font-weight: 700; }
 
+/* Contact page */
+button.button { font: inherit; font-weight: 600; cursor: pointer; border: 0; }
+button.button.secondary { border: 1px solid var(--border); }
+.doc .contact-card { background: var(--accent-soft); border-radius: var(--radius); padding: 24px; margin: 28px 0 8px; }
+.doc .contact-card h2 { margin: 0 0 6px; }
+.doc .contact-card .email { margin: 0 0 16px; word-break: break-all; }
+.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 16px; }
+.contact-actions[hidden] { display: none; }
+.doc .contact-hint { margin: 0; font-size: 15px; color: var(--muted); }
+
 /* Footer */
 .site-footer {
   border-top: 1px solid var(--border);
