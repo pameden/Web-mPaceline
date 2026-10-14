@@ -1,215 +1,223 @@
+---
+# Processed by GitHub Pages (Jekyll) to insert the shared header and footer.
+---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>mPaceline Pulse — Meg Software</title>
-  <meta name="description" content="mPaceline Pulse is the ultimate companion for Peloton App users and Peloton Equipment owners: live stats, Power Zone graphs, Apple Health integration and visuals that prove your progress.">
+  <meta name="description" content="Live-track any Peloton class with your real bike, tread or rower metrics, see the class structure and upcoming Power Zones before they hit, and prove you're getting stronger with your full workout history.">
   <link rel="icon" type="image/png" href="images/icon.png">
   <link rel="apple-touch-icon" href="images/icon.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="./"><img src="images/icon.png" alt="">mPaceline Pulse</a>
-      <nav class="nav" aria-label="Main">
-        <a href="help-topics/">Help</a>
-        <a href="support/">Contact Us</a>
-
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main>
     <!-- Hero -->
     <section class="hero">
       <div class="wrap">
         <div>
-          <h1>The ultimate <span class="accent">Peloton companion.</span></h1>
-          <p class="lead">If you own a Peloton Bike, Tread, Rower or you use the Peloton App on your own equipment, you need this App!</p>
-          <p>mPaceline Pulse is the ultimate companion for Peloton App users and Peloton Equipment owners alike.</p>
-          <p>See your live stats — cadence, resistance, speed, pace, incline, and stroke rate — displayed alongside on-screen instructor cues as your class progresses. Power Zone athlete? Enter your FTP to unlock precise Power Zone graphs and see exactly which zone you’re training in, moment by moment.</p>
-          <p>mPaceline Pulse also integrates seamlessly with Apple Health, automatically saving every workout and updating your Activity Rings — so your progress is always up to date, wherever you train.</p>
+          <p class="eyebrow">The Peloton companion app</p>
+          <h1>Know what’s coming next. <span class="accent">Prove you’re getting stronger.</span></h1>
+          <p class="lead">mPaceline Pulse live-tracks your Peloton class with your real equipment metrics, shows you the upcoming efforts before the instructor calls them, and turns every workout into proof of progress.</p>
           <div class="actions">
             <a class="app-store-badge" href="https://apps.apple.com/us/app/mpaceline-the-power-zone/id6754201831"><img src="images/appstore-black.png" alt="Download on the App Store" width="162" height="54"></a>
-            <a class="button secondary" href="#about">Learn More</a>
+            <span class="note">Free 7-day trial · iPhone, iPad &amp; Apple Watch</span>
           </div>
+          <ul class="works-with" aria-label="Works with">
+            <li>Peloton Bike &amp; Bike+</li>
+            <li>Peloton Tread</li>
+            <li>Peloton Row</li>
+            <li>Peloton App + your own bike, treadmill or rower</li>
+          </ul>
         </div>
-        <div>
+        <div class="hero-image">
           <img src="images/hero.png" alt="mPaceline Pulse showing a recent Power Zone ride and live class metrics on iPhone" width="600" height="834">
         </div>
       </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="band">
+    <!-- Which rider are you -->
+    <section class="band" id="setup">
       <div class="wrap">
-        <h2>About mPaceline Pulse</h2>
-        <p class="section-lead">mPaceline is a cycling, running and rowing workout App designed to help you visualize your results over time. The App works best if your focus is on taking spinning or running classes that provide metrics on your class performance. It’s primarily focused on individuals that own a Peloton Bike, Tread or a 3rd party equipment owners that utilize the Peloton App. However, if you have Power or Cadence meters on an outdoor bike, mPaceline will work equally well.</p>
-        <div class="grid">
-          <div class="card">
-            <span class="emoji" aria-hidden="true">❤️</span>
-            <h3>Live Stats</h3>
-            <p>See live Heart Rate and Power metrics as you ride. mPaceline can connect to a number of Bluetooth Peripherals to show you live data.</p>
+        <h2>Built for how you ride Peloton</h2>
+        <p class="section-lead">Whether the class plays on a Peloton screen or on your iPad or TV, mPaceline Pulse fills in what Peloton doesn’t show you.</p>
+        <div class="two-col">
+          <div class="card persona">
+            <span class="tag">Peloton Bike, Tread or Row</span>
+            <h3>Get more out of the screen you already have</h3>
+            <ul class="feature-list">
+              <li>Your metrics stream from Peloton in real time, with no extra sensors to pair</li>
+              <li>See the whole class structure and what’s coming next, not just the current target</li>
+              <li>Mount your iPhone on the handlebars or crossbar for an at-a-glance second screen</li>
+              <li>Your full Peloton history downloads automatically, back to your very first ride</li>
+            </ul>
           </div>
-          <div class="card">
-            <span class="emoji" aria-hidden="true">📈</span>
-            <h3>Visualize Your Results</h3>
-            <p>The power of mPaceline is that it helps you demonstrate that your ride performance is improving. View a number of charts and graphs to show that you are getting stronger.</p>
-          </div>
-          <div class="card">
-            <span class="emoji" aria-hidden="true">🚴</span>
-            <h3>Connect with Peloton</h3>
-            <p>mPaceline is a great Peloton Companion! When your ride is complete, mPaceline will pull additional stats and data from Peloton to give you a complete picture of your ride performance.</p>
+          <div class="card persona">
+            <span class="tag">Peloton App on your own equipment</span>
+            <h3>See the numbers the Peloton App can’t</h3>
+            <ul class="feature-list">
+              <li>Reads your bike, treadmill or rower over Bluetooth: cadence, resistance, power, speed, distance, pace, incline and stroke rate</li>
+              <li>Compares your live numbers to the instructor’s targets, so you stop guessing</li>
+              <li>Real Power Zone training on non-Peloton bikes, including FTP tests</li>
+              <li>Every class is recorded and kept on your devices to build your history</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Key benefits -->
-    <section id="benefits">
-      <div class="wrap">
-        <h2>Why mPaceline Pulse? Three Key Benefits</h2>
-        <div class="grid" style="margin-top: 28px;">
-          <div class="card">
-            <h3>Visuals That Prove Progress</h3>
-            <p>You put in the work—mPaceline helps you see the payoff.</p>
-            <p>mPaceline focuses on turning your workouts into meaningful, easy-to-understand insights. Instead of relying on isolated stats from individual classes, the app connects your training over time and shows clear trends in both physical and cardiovascular performance.</p>
-            <p>Through unique reports and visualizations not available on the Peloton platform, you can:</p>
-            <ul class="feature-list">
-              <li>Track measurable improvements in fitness, fatigue, and recovery</li>
-              <li>See progress numerically and graphically</li>
-              <li>Understand how consistency translates into real gains</li>
-            </ul>
-            <p style="margin-top: 12px;">These visuals help validate your effort and reinforce that your Peloton subscription—and your time—is delivering real results.</p>
-          </div>
-          <div class="card">
-            <h3>Better Class Awareness &amp; Direction</h3>
-            <p>One of mPaceline’s standout features is how it helps you understand where you are in a class—and where you’re headed next.</p>
-            <p>During workouts, Peloton shows what you should be doing right now (cadence, resistance, speed, etc.). mPaceline goes further by visualizing the structure of the class itself. You can see:</p>
-            <ul class="feature-list">
-              <li>The current phase of the workout</li>
-              <li>What’s coming up in the next few minutes</li>
-              <li>When to push harder—and when relief or recovery is approaching</li>
-            </ul>
-            <p style="margin-top: 12px;">This forward-looking context helps you pace yourself mentally and physically, making tough efforts feel more manageable and intentional.</p>
-            <p>That same clarity extends to class selection. While browsing Peloton classes, mPaceline visually breaks down:</p>
-            <ul class="feature-list">
-              <li>Class structure</li>
-              <li>Cadence and resistance ranges</li>
-              <li>Estimated effort and intensity</li>
-            </ul>
-            <p style="margin-top: 12px;">Whether you’re looking to go all-out or intentionally choosing a lighter day, mPaceline helps you pick the right class before you hit start.</p>
-          </div>
-          <div class="card">
-            <h3>Motivation Through Consistency</h3>
-            <p>Motivation isn’t just about intensity—it’s about showing up consistently.</p>
-            <p>mPaceline Pulse includes features designed to encourage steady, sustainable progress:</p>
-            <ul class="feature-list">
-              <li>Workout streaks and calendars</li>
-              <li>Cumulative goals like total minutes or distance</li>
-              <li>Visual reminders of your consistency over time</li>
-            </ul>
-            <p style="margin-top: 12px;">Sometimes motivation comes from a big performance win. Other times, it’s simply checking the box and keeping the streak alive. mPaceline supports both, helping you stay engaged even on days when motivation is harder to find.</p>
-          </div>
+    <!-- Live tracking -->
+    <section id="live">
+      <div class="wrap feature">
+        <div class="feature-text">
+          <p class="kicker">1 · During the class</p>
+          <h2>See the class before it happens</h2>
+          <p>When your Peloton class starts, mPaceline Pulse detects it and loads the full class plan. Your live metrics are drawn right on top of it, so you always know where you are and what’s next.</p>
+          <ul class="feature-list">
+            <li><span><strong>Upcoming efforts.</strong> Graphs show the cadence, resistance and power changes ahead, so you can pace a hard block before it starts.</span></li>
+            <li><span><strong>Power Zone cues.</strong> Your current zone, the next zone and a countdown to the change, plus an accuracy score for how well you’re holding it.</span></li>
+            <li><span><strong>Every discipline.</strong> Cadence and resistance on the bike, speed and incline on the tread, stroke rate on the rower.</span></li>
+            <li><span><strong>Heart rate.</strong> From a chest strap, armband or your Apple Watch.</span></li>
+          </ul>
+        </div>
+        <div class="phones three">
+          <img src="images/track1.png" alt="mPaceline Pulse finds the Peloton class you just started and counts down to the start" width="1242" height="2688" loading="lazy">
+          <img src="images/track2.png" alt="Live Power Zone ride showing target power range, current and next zone with countdown, and the class power structure" width="1242" height="2688" loading="lazy">
+          <img src="images/track3.png" alt="Live treadmill class showing speed and incline targets with upcoming intervals" width="1242" height="2688" loading="lazy">
         </div>
       </div>
     </section>
 
-    <!-- Screens -->
-    <section id="screens" class="band">
-      <div class="wrap">
-        <h2>Sample App Screens</h2>
-        <p class="section-lead">A quick look at mPaceline Pulse on iPhone.</p>
-        <div class="screens">
-          <img src="images/screen-1.png" alt="Track cycling, running and rowing workouts" width="600" height="1298" loading="lazy">
-          <img src="images/screen-2.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-3.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-4.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-5.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-6.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-7.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-8.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-9.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
-          <img src="images/screen-10.png" alt="mPaceline Pulse app screen" width="600" height="1298" loading="lazy">
+    <!-- Progress -->
+    <section id="progress" class="band">
+      <div class="wrap feature reverse">
+        <div class="feature-text">
+          <p class="kicker">2 · Over weeks, months and years</p>
+          <h2>Proof your training is paying off</h2>
+          <p>Connect your Peloton account and your entire workout history comes with you. Riding third-party equipment? mPaceline Pulse records every class as you go. Either way, your progress is easy to see.</p>
+          <ul class="feature-list">
+            <li><span><strong>Get measurably stronger.</strong> Watch your output, cadence and resistance climb over time.</span></li>
+            <li><span><strong>Track your FTP.</strong> See every FTP test in one place and your Power Zones move up with it.</span></li>
+            <li><span><strong>Compare repeat classes.</strong> Took the same ride twice? Put them side by side and see exactly where you improved.</span></li>
+            <li><span><strong>Personal records.</strong> PR Explorer shows your best output for every class length.</span></li>
+            <li><span><strong>Fitness, fatigue and form.</strong> Training metrics show when you’re ready to push and when to recover.</span></li>
+            <li><span><strong>Stay consistent.</strong> Weekly streaks, all-time totals and calendars keep you showing up.</span></li>
+          </ul>
         </div>
+        <div class="phones three">
+          <img src="images/trainingmetrics.png" alt="Training Metrics screen charting form history over 12 months with daily stress, fatigue, fitness and form" width="1242" height="2688" loading="lazy">
+          <img src="images/streaks.png" alt="Streaks calendar showing workout minutes on each day of the month" width="1242" height="2688" loading="lazy">
+          <img src="images/results.png" alt="Results screen with PR Explorer showing best output by class length and most-ridden instructors" width="1242" height="2688" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Class picker -->
+    <section id="classes">
+      <div class="wrap feature stacked">
+        <div class="feature-text">
+          <p class="kicker">3 · Before you press start</p>
+          <h2>Pick the right class, every time</h2>
+          <p>Browse Peloton classes with their structure drawn out, so zones, intervals and intensity are clear at a glance. Open any class to see its full plan, Power Zone graph or speed and incline cues, and even the playlist. Choose an all-out day or an easy recovery spin with confidence, then bookmark it for later.</p>
+        </div>
+        <div class="phones four">
+          <img src="images/classes1.png" alt="Class browser filtered to Cycling Power Zone, showing each class's zone structure graph" width="1242" height="2688" loading="lazy">
+          <img src="images/classes2.png" alt="Class detail with description, Power Zone graph and class plan" width="1242" height="2688" loading="lazy">
+          <img src="images/classes3.png" alt="Class detail showing the class playlist" width="1242" height="2688" loading="lazy">
+          <img src="images/classes4.png" alt="Running class detail with speed and incline cue graphs" width="1242" height="2688" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works -->
+    <section class="band" id="how">
+      <div class="wrap">
+        <h2>Up and running in minutes</h2>
+        <ol class="steps">
+          <li>
+            <h3>Connect Peloton</h3>
+            <p>Sign in with Peloton’s secure login. Your workout history starts downloading.</p>
+          </li>
+          <li>
+            <h3>Pair your equipment</h3>
+            <p>Peloton hardware works automatically. Other bikes, treadmills, rowers and heart-rate monitors pair over Bluetooth.</p>
+          </li>
+          <li>
+            <h3>Start any class</h3>
+            <p>Start the class in Peloton. mPaceline Pulse finds it and starts tracking automatically.</p>
+          </li>
+        </ol>
+        <p class="setup-note">Popular setups: an iPhone on your handlebars, or Peloton and mPaceline Pulse side by side on one iPad. <a href="help-trackingdevice/">See setup options →</a></p>
       </div>
     </section>
 
     <!-- Testimonials -->
     <section id="testimonials">
       <div class="wrap">
-        <h2>Our Testimonials</h2>
-        <p class="section-lead">What folks are saying about us…</p>
+        <h2>Riders love it</h2>
+        <p class="section-lead"><span class="stars" aria-hidden="true">★★★★★</span> reviews on the App Store</p>
         <div class="quotes">
-          <div class="card quote">
-            <h3>Exceptional</h3>
-            <p class="who">PZ Rider <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>I am an avid peloton power zone rider who uses a Keiser bike. This app is exceptional in linking to my Keiser and peloton to create an accurate / well rounded workout experience. The training details are just what the serious athlete wants! Not to forget the amazing quick service this app provides with questions I have sent in. Amazing app and quiet with the price.</p>
-          </div>
-          <div class="card quote">
-            <h3>Data For Days</h3>
-            <p class="who">JMC5455 <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>The analytics just keep getting better and better! I was hesitant to switch over to the new app, but man does it deliver. The team is constantly looking for ways to improve user experience and truly care for what we want to see. Excited to see what they come up with next!</p>
-          </div>
-          <div class="card quote">
-            <h3>Great App</h3>
-            <p class="who">Bardee <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>This is the app I use to track all my workouts in one place. Peloton classes, indoor cycling, outdoor cycling, walking, running, hiking, weights and fitness classes in the gym…you name it. I can download the metrics from my workouts into this app and track them without having to wade through a lot of bloat (looking at you, Strava!) The developer is very responsive, and this app has grown and evolved very quickly in a short amount of time. I am a happy camper.</p>
-          </div>
-          <div class="card quote">
-            <h3>It’s Great!</h3>
-            <p class="who">TxTechGirl91 <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>This app is perfect for use with my power zone rides. The developer is always updating and quick to respond to questions I had.</p>
-          </div>
-          <div class="card quote">
-            <h3>What a Great App!</h3>
-            <p class="who">Mhmks <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>Streamlined integration to use IC4. New features constantly releasing!</p>
-          </div>
-          <div class="card quote">
-            <h3>Still The Best for Peloton Graphs</h3>
-            <p class="who">BKNYWill <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>Look – this update was overdue. The previous auth setup was wildly insecure. Now we use proper peloton OAuth and have a dynamic sync with Peloton data automatically. I easily got a refund from Apple for the previous subscription, and am right back at home with this latest version.</p>
-          </div>
-          <div class="card quote">
-            <h3>Brilliant Motivator</h3>
-            <p class="who">JMarkGoodman <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>I have the app “floating” over Peloton on my iPad and it transforms the experience. I get a load of visuals, much better than anyone on a Peloton Bike will see. I really don’t think I would keep my Peloton subscription if it wasn’t for MPaceLine Pulse.</p>
-          </div>
-          <div class="card quote">
-            <h3>Excellent</h3>
-            <p class="who">PMAReader <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>If you haven’t taken a look at this app you are missing out. It’s an incredible extension to my Peloton experience. Can’t imagine not having it.</p>
-          </div>
-          <div class="card quote">
-            <h3>Give It Time</h3>
-            <p class="who">Srm1964123 <span class="stars" aria-label="5 stars">★★★★★</span></p>
-            <p>Poor reviews of the earlier versions are unfair, IMO. Peloton pulled the rug out from under developers and radically changed their programming interface. MPaceLine needed a full rewrite, so the earlier versions of this new app lacked the more advanced features of the old app. Meg Software seems to be restoring features at a good pace, so hang in there.</p>
-          </div>
+          <figure class="card quote">
+            <blockquote>“I have the app ‘floating’ over Peloton on my iPad and it transforms the experience. I get a load of visuals, much better than anyone on a Peloton Bike will see.”</blockquote>
+            <figcaption>JMarkGoodman</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>“I am an avid Peloton Power Zone rider who uses a Keiser bike. This app is exceptional in linking to my Keiser and Peloton… The training details are just what the serious athlete wants!”</blockquote>
+            <figcaption>PZ Rider</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>“The analytics just keep getting better and better! … The team is constantly looking for ways to improve user experience and truly care for what we want to see.”</blockquote>
+            <figcaption>JMC5455</figcaption>
+          </figure>
+          <figure class="card quote">
+            <blockquote>“This app is perfect for use with my power zone rides. The developer is always updating and quick to respond to questions I had.”</blockquote>
+            <figcaption>TxTechGirl91</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
+    <section id="faq" class="band">
+      <div class="wrap faq">
+        <h2>Questions before you download</h2>
+        <details>
+          <summary>Do I need a Peloton membership?</summary>
+          <p>To live-track classes and download your history, yes. mPaceline Pulse connects to your Peloton account to get class plans, instructor cues and your workouts. It works with an All-Access membership on Peloton hardware or the Peloton App on your own equipment.</p>
+        </details>
+        <details>
+          <summary>Will it work with my bike, treadmill or rower?</summary>
+          <p>Peloton Bike, Bike+, Tread and Row stream metrics through your Peloton account. For other equipment, mPaceline Pulse connects to Bluetooth-enabled bikes, trainers, treadmills and rowers, with direct support for Keiser M Series bikes. Heart rate can come from a Bluetooth strap or your Apple Watch. Use the free trial to confirm your equipment connects. <a href="help-connecting/">How connecting works</a></p>
+        </details>
+        <details>
+          <summary>What device do I run it on?</summary>
+          <p>iPhone, iPad or both, with an optional Apple Watch app for heart rate. Most Peloton hardware owners mount an iPhone. Peloton App users often play the class on an iPad or TV and run mPaceline Pulse on an iPhone, or run both apps together on one iPad. <a href="help-trackingdevice/">Compare setups</a></p>
+        </details>
+        <details>
+          <summary>I do Power Zone training. What do I get?</summary>
+          <p>Enter your FTP and mPaceline Pulse builds your zones, shows the cued zone and the next one with a countdown, scores how accurately you hold each zone, and tracks your FTP over time. <a href="help-power-zones/">Power Zones and FTP</a></p>
+        </details>
+        <details>
+          <summary>How much does it cost?</summary>
+          <p>Download it free and start a 7-day trial with full access. Only subscribe if it earns a spot in your training. Current pricing is shown in the App Store.</p>
+        </details>
+      </div>
+    </section>
+
     <!-- Download -->
-    <section class="band download">
+    <section class="download">
       <div class="wrap">
-        <h2>mPaceline Pulse is Free To Try</h2>
+        <h2>Ride smarter starting with your next class</h2>
+        <p>Try every feature free for 7 days.</p>
         <a class="app-store-badge" href="https://apps.apple.com/us/app/mpaceline-the-power-zone/id6754201831"><img src="images/appstore-black.png" alt="Download on the App Store" width="162" height="54"></a>
-        <p>Download on the App Store and start a free 1-week Trial. Only continue if you are pleased with the App.</p>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>Copyright © 2026 Meg Software</span>
-      <nav aria-label="Footer">
-        <a href="privacy/">Privacy Policy</a>
-        <a href="terms/">Terms and Conditions</a>
-      </nav>
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>

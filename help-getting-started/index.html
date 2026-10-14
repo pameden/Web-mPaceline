@@ -1,3 +1,6 @@
+---
+# Processed by GitHub Pages (Jekyll) to insert the shared header and footer.
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,15 +12,7 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="../"><img src="../images/icon.png" alt="">mPaceline Pulse</a>
-      <nav class="nav" aria-label="Main">
-        <a href="../help-topics/" aria-current="page">Help</a>
-        <a href="../support/">Contact Us</a>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main class="doc">
     <a class="back" href="../help-topics/">← Help Topics</a>
@@ -59,14 +54,6 @@
     <p>If you ever need help, look for the help icon at the top right corner of many of the pages in the App. Here you will find helpful advice on how to utilize the feature that you are currently viewing.</p>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>Copyright © 2026 Meg Software</span>
-      <nav aria-label="Footer">
-        <a href="../privacy/">Privacy Policy</a>
-        <a href="../terms/">Terms and Conditions</a>
-      </nav>
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>

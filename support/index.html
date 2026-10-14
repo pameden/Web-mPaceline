@@ -1,3 +1,6 @@
+---
+# Processed by GitHub Pages (Jekyll) to insert the shared header and footer.
+---
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,15 +12,7 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="wrap">
-      <a class="brand" href="../"><img src="../images/icon.png" alt="">mPaceline Pulse</a>
-      <nav class="nav" aria-label="Main">
-        <a href="../help-topics/">Help</a>
-        <a href="../support/" aria-current="page">Contact Us</a>
-      </nav>
-    </div>
-  </header>
+  {% include header.html %}
 
   <main class="doc">
     <h1>Support</h1>
@@ -30,14 +25,6 @@
     <p>We look forward to helping you.</p>
   </main>
 
-  <footer class="site-footer">
-    <div class="wrap">
-      <span>Copyright © 2026 Meg Software</span>
-      <nav aria-label="Footer">
-        <a href="../privacy/">Privacy Policy</a>
-        <a href="../terms/">Terms and Conditions</a>
-      </nav>
-    </div>
-  </footer>
+  {% include footer.html %}
 </body>
 </html>

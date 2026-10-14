@@ -1,0 +1,10 @@
+{%- comment -%} Site footer, shared by every page. Edit here; GitHub Pages (Jekyll) inserts it where a page includes footer.html. {%- endcomment %}
+  <footer class="site-footer">
+    <div class="wrap">
+      <span>Copyright © 2026 Meg Software</span>
+      <nav aria-label="Footer">
+        <a href="{{ '/privacy/' | relative_url }}"{% if page.url == '/privacy/' %} aria-current="page"{% endif %}>Privacy Policy</a>
+        <a href="{{ '/terms/' | relative_url }}"{% if page.url == '/terms/' %} aria-current="page"{% endif %}>Terms and Conditions</a>
+      </nav>
+    </div>
+  </footer>
