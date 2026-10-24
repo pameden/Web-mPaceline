@@ -1,0 +1,250 @@
+---
+# Processed by GitHub Pages (Jekyll) to insert the shared header and footer.
+# Unlisted preview page: not linked from the site and kept out of search engines.
+sitemap: false
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Coaching Preview — mPaceline Pulse</title>
+  <meta name="description" content="A first look at AI Coaching in mPaceline Pulse: a personal 6-week Power Zone program built from your riding, your schedule and real Peloton classes.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="../images/icon.png">
+  <link rel="apple-touch-icon" href="../images/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+  <style>
+    /* AI Coaching preview page: a few additions to the site stylesheet */
+    /* The screenshots are plain phone screens: round them like a phone and edge them so they lift off the page */
+    .hero-image img, .phones img { border-radius: 9% / 4.2%; border: 1px solid var(--border); }
+    /* Hero with three columns: text, screenshot, and who it's for */
+    .hero.three .wrap { grid-template-columns: 1.1fr 0.7fr 1fr; gap: 32px; }
+    .hero .who-for h3 { margin: 0 0 14px; font-size: 19px; }
+    .hero .who-for .fit-list { gap: 12px; font-size: 15px; }
+    .hero .who-for .fit-list li { color: var(--muted); margin: 0; }
+    @media (max-width: 1000px) {
+      .hero.three .wrap { grid-template-columns: 1fr 1fr; }
+      .hero.three .wrap > :first-child { grid-column: 1 / -1; }
+    }
+    @media (max-width: 640px) { .hero.three .wrap { grid-template-columns: 1fr; } }
+    .preview-badge { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.04em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 4px 12px; margin: 0 0 14px; }
+    .needs { max-width: 860px; margin: 0 auto; }
+    .needs .feature-list strong { color: var(--text); }
+    .needs .feature-list li { color: var(--muted); }
+    .share-table { width: 100%; border-collapse: collapse; margin: 8px 0 0; font-size: 15px; }
+    .share-table th, .share-table td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    .share-table th { color: var(--text); font-weight: 600; }
+    .share-table td { color: var(--muted); }
+    .share-table td:first-child { color: var(--text); font-weight: 600; white-space: nowrap; }
+    .stress-card { max-width: 860px; margin: 32px auto 0; }
+    .phones.two { grid-template-columns: 1fr 1fr; gap: 16px; }
+    .fine-print { max-width: 760px; margin: 0 auto; font-size: 14px; color: var(--muted); text-align: center; }
+    @media (max-width: 640px) {
+      .phones.two { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; gap: 12px; max-width: none; margin: 0 -20px; padding: 0 20px 16px; }
+      .phones.two img { flex: 0 0 auto; width: 62%; scroll-snap-align: center; }
+      .share-table td:first-child { white-space: normal; }
+    }
+  </style>
+</head>
+<body>
+  {% include header.html %}
+
+  <main>
+    <!-- Hero -->
+    <section class="hero three">
+      <div class="wrap">
+        <div>
+          <p class="preview-badge">Preview · Coming soon</p>
+          <h1>Meet your <span class="accent">AI Coach</span>.</h1>
+          <p class="lead">AI Coaching builds you a personal 6-week Power Zone program from real Peloton classes, fitted around your recent riding, your FTP and the time you actually have.</p>
+          <p>You choose the goal and how hard to push. AI Coaching plans every ride, picks a class for each one, and shows you how the plan should move your fitness through to an FTP test at the end.</p>
+          <p>We're sharing this preview with a small group of riders before release.</p>
+          <div class="actions">
+            <a class="button" href="#needs">What you'll need</a>
+            <a class="button secondary" href="#how">How it works</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="../images/aicoach2.png" alt="AI Coaching Today tab showing today's 45 minute PZ Endurance class with Olivia Amato and the next two rides coming up" width="960" height="2079">
+        </div>
+        <div class="card who-for">
+          <h3>Who it's for</h3>
+          <ul class="fit-list">
+            <li><strong>You want to raise your FTP</strong>but aren't sure which classes to take, or how hard to go, to get there.</li>
+            <li><strong>You want structure</strong>and like knowing exactly what to ride each day instead of scrolling for a class.</li>
+            <li><strong>You love working through a list</strong>and get a boost from checking off every ride until the program is done.</li>
+            <li><strong>You're short on time</strong>and want every ride to count, planned around the days and class lengths that fit your week.</li>
+            <li><strong>You're getting back on the bike</strong>and want a plan that eases you in before the harder work starts.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Requirements and the use of AI -->
+    <section class="band" id="needs">
+      <div class="wrap needs">
+        <h2>Built with Apple Intelligence</h2>
+        <p class="section-lead">AI Coaching uses artificial intelligence to plan your program, so it needs a recent device and the newest iOS.</p>
+        <div class="two-col">
+          <div class="card">
+            <h3>What you'll need</h3>
+            <ul class="feature-list">
+              <li><span><strong>iOS 27 or later.</strong> AI Coaching is built on Apple Intelligence features new in iOS 27.</span></li>
+              <li><span><strong>A device that supports Apple Intelligence,</strong> such as an iPhone 15 Pro or newer, or an iPad with an M-series chip, with Apple Intelligence turned on in Settings.</span></li>
+              <li><span><strong>A connected Peloton account</strong> and your Bike FTP set in mPaceline Pulse.</span></li>
+              <li><span><strong>A Full Access subscription</strong> and an internet connection.</span></li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>How we use AI</h3>
+            <ul class="feature-list">
+              <li><span><strong>AI plans your days.</strong> It decides how long each ride should be and how hard, week by week, following proven Power Zone training principles.</span></li>
+              <li><span><strong>The app keeps it safe and real.</strong> It checks the plan against your schedule and recovery, then matches every ride to an actual Peloton class.</span></li>
+              <li><span><strong>Private by design.</strong> Planning runs on Apple's Private Cloud Compute. Your summary isn't stored, isn't visible to Apple, and never reaches our servers.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How a program is built -->
+    <section id="how">
+      <div class="wrap">
+        <h2>How your program is built</h2>
+        <p class="section-lead">It takes about a minute. Here's what happens when you tap Build Program.</p>
+        <ol class="steps">
+          <li>
+            <h3>It looks at your riding</h3>
+            <p>Your FTP, your recent rides and your current fitness, fatigue and form. If you've been off the bike for a while, it eases you back in.</p>
+          </li>
+          <li>
+            <h3>It plans every ride</h3>
+            <p>Six weeks of riding and rest days, with each ride's length and training stress set to build your fitness steadily without overdoing it.</p>
+          </li>
+          <li>
+            <h3>It finds your classes</h3>
+            <p>Each ride is matched to a real Peloton Power Zone class of the right length, type and effort, starting with your favorite instructors.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Setting up a program -->
+    <section class="band" id="setup">
+      <div class="wrap feature">
+        <div class="feature-text">
+          <p class="kicker">Setting up a program</p>
+          <h2>Your goal, your schedule</h2>
+          <p>Choose a 6-week program and tell the coach when you can ride. Everything here shapes the plan you get.</p>
+          <ul class="feature-list">
+            <li><span><strong>Grow your Zones</strong> builds your FTP over five weeks, eases off in week 6 so you're fresh, and ends with an FTP Test class to measure your gain.</span></li>
+            <li><span><strong>Maintain your Zones</strong> keeps your fitness steady with a mix of Power Zone and endurance rides.</span></li>
+            <li><span><strong>How hard to push:</strong> 25% (Steady), 50% (Balanced) or 75% (Aggressive). See below for what this changes.</span></li>
+            <li><span><strong>When you can ride:</strong> 3 to 6 rides a week, the longest class you can fit on weekdays and weekends, and any days you never ride.</span></li>
+            <li><span><strong>Preferred instructors:</strong> the coach looks for their classes first and shares the plan between them.</span></li>
+            <li><span><strong>When to start:</strong> Today, Tomorrow, Next Monday, or Last Monday if you want to count rides you've already done this week.</span></li>
+          </ul>
+        </div>
+        <div class="phones three">
+          <img src="../images/aicoach6.png" alt="Program setup: choose Maintain or Grow your Zones, pick a start date and choose how hard to push" width="960" height="2079" loading="lazy">
+          <img src="../images/aicoach7.png" alt="Program setup: rides a week, longest weekday and weekend class, and days you never ride" width="960" height="2079" loading="lazy">
+          <img src="../images/aicoach8.png?v=2" alt="Program setup: choose your preferred Peloton instructors" width="960" height="2079" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- Training stress and difficulty -->
+    <section id="stress">
+      <div class="wrap feature reverse">
+        <div class="feature-text">
+          <p class="kicker">Training stress</p>
+          <h2>You set the difficulty. The plan follows.</h2>
+          <p>Every ride carries a <strong>training stress</strong> score: a single number for how hard a class is for you, based on how long it is and how much of it is spent in each Power Zone relative to your FTP. A 45-minute PZ Endurance ride might score around 35; a 45-minute Power Zone ride closer to 50.</p>
+          <p>The coach plans a weekly training-stress target that rises gradually, so your fitness climbs without running you into the ground. Then it picks classes whose training stress fits each day.</p>
+          <ul class="feature-list">
+            <li><span><strong>Stays safe.</strong> Hard days are never back to back, and the plan keeps your form from dropping too low.</span></li>
+            <li><span><strong>Uses your time well.</strong> On limited time, the quality of your Zone 4 and 5 work matters most, and the plan says so.</span></li>
+            <li><span><strong>See the effect.</strong> The Program tab charts how the plan should move your fitness, fatigue and form over the six weeks.</span></li>
+          </ul>
+        </div>
+        <div class="phones two">
+          <img src="../images/aicoach4.png" alt="Program tab: program summary and the settings it was built from" width="960" height="2079" loading="lazy">
+          <img src="../images/aicoach5.png" alt="Program tab: fitness, fatigue and form chart over the six weeks, with the program focus and tips" width="960" height="2079" loading="lazy">
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="card stress-card">
+          <h3>How hard to push: what changes</h3>
+          <p>Your choice sets how many of your rides in weeks 2 to 5 are Power Zone classes, how fast your weekly training stress rises, and how hard your endurance rides are. Pushing harder can grow your FTP faster, and needs more recovery.</p>
+          <table class="share-table">
+            <thead><tr><th>Choice</th><th>4 rides a week</th><th>What to expect</th></tr></thead>
+            <tbody>
+              <tr><td>25% · Steady</td><td>1 Power Zone class</td><td>A gentler build with mostly endurance riding. Good when you're returning or short on recovery.</td></tr>
+              <tr><td>50% · Balanced</td><td>2 Power Zone classes</td><td>A steady, sustainable climb in fitness for most riders.</td></tr>
+              <tr><td>75% · Aggressive</td><td>3 Power Zone classes</td><td>The fastest build and the most fatigue. Best when you're rested and riding consistently.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Following the plan -->
+    <section class="band" id="daily">
+      <div class="wrap feature">
+        <div class="feature-text">
+          <p class="kicker">Day to day</p>
+          <h2>Follow along, adjust as you go</h2>
+          <p>AI Coaching shows what to ride today, your week at a glance, and how you're progressing.</p>
+          <ul class="feature-list">
+            <li><span><strong>Today, Plan and Program.</strong> Today's class and what's next; every week of the plan; and the big picture.</span></li>
+            <li><span><strong>Progress at a glance.</strong> A green check for every planned class you take, even if you take it a day late. An orange mark for a ride you missed, until you make it up.</span></li>
+            <li><span><strong>Swap any class.</strong> Not feeling a class? Choose from up to 25 others of the same length and type, with about the same training stress.</span></li>
+            <li><span><strong>On your Home screen.</strong> See today's effort, its instructor and your progress, bookmark the class for your bike, or tap through to its details.</span></li>
+            <li><span><strong>Fresh classes.</strong> The coach skips anything you've ridden in the last three weeks, and marks a repeat of an older class so you can compare your output with last time.</span></li>
+          </ul>
+        </div>
+        <div class="phones two">
+          <img src="../images/aicoach1.png" alt="Home screen AI Coaching card with program progress and today's class with Olivia Amato" width="960" height="2079" loading="lazy">
+          <img src="../images/aicoach3.png" alt="Plan tab: week 1 rides with completed checks, a missed ride marker, rest days and today's class" width="960" height="2079" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq">
+      <div class="wrap faq">
+        <h2>Questions</h2>
+        <details>
+          <summary>Why does it need iOS 27 and a newer device?</summary>
+          <p>AI Coaching plans your program with Apple Intelligence, using features introduced in iOS 27. Apple Intelligence only runs on devices that support it, such as an iPhone 15 Pro or newer, or an iPad with an M-series chip, and it needs to be turned on in Settings.</p>
+        </details>
+        <details>
+          <summary>What information does the AI see?</summary>
+          <p>A summary of your FTP, your program settings, your recent riding and training load, and the days you can ride. It never receives your name or your Peloton account details. It's processed on Apple's Private Cloud Compute, which doesn't store your data or make it available to Apple, and nothing is sent to our servers.</p>
+        </details>
+        <details>
+          <summary>What happens after six weeks?</summary>
+          <p>Grow programs end with an FTP Test class so you can see your gain. When you're ready, start your next program, and it's built from your latest riding and your new FTP.</p>
+        </details>
+        <details>
+          <summary>Can I change my program part way through?</summary>
+          <p>You can swap any upcoming class at any time. To change your settings, start a new program; it replaces your current one, so the app asks you to confirm first. Your rides always stay in your workout history.</p>
+        </details>
+        <details>
+          <summary>Do strength or other workouts count?</summary>
+          <p>They don't count toward the plan, but they do appear in your fitness chart. We recommend adding one or two strength or mobility classes a week on easy or rest days.</p>
+        </details>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <p class="fine-print">AI Coaching provides general fitness and training guidance only. It is not medical advice. Talk with your doctor before starting a new exercise program, and listen to your body. AI can make mistakes, so check the plan against how you feel and use your own judgment. Features shown are in preview and may change before release.</p>
+      </div>
+    </section>
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>
